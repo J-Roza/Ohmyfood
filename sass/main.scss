@@ -1,0 +1,41 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #579c87;
+$secondary-color: #fdcb46;
+
+
+html{    
+    font-size: .625em; /* fallback IE8+ */
+    font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+
+body{
+    width: 8vw;
+}
+
+footer, h1, .futur{
+    color: $secondary-color;
+    background-color: $primary-color;
+}
+
+
+img{
+    width: 150px;
+    box-shadow: 5px 5px 5px darkgray;
+    &:hover {
+        width: 170px;
+    }
+}
+
+@media (min-width: 768px){
+
+body{
+    width: 500px;    
+}
+section{
+    display: flexbox;
+    flex-direction: column-reverse;
+}
+
+}
+
+

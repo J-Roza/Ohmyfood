@@ -1,0 +1,11 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "Jonathan Roza",
+  "license": "ISC"
+}
