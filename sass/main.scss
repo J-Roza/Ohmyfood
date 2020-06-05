@@ -9,33 +9,33 @@ html{
 }
 
 body{
-    width: 8vw;
+    background-color: #25b377;  
+    font-size: 1.8em; /* base font-size is equivalent "14px" */
+  
 }
 
-footer, h1, .futur{
+footer, header, .futur{
     color: $secondary-color;
     background-color: $primary-color;
 }
 
+header{
+    
+    font-size: 6rem;
+}
+
+section {
+    display: flex;
+    
+}
 
 img{
     width: 150px;
     box-shadow: 5px 5px 5px darkgray;
     &:hover {
-        width: 170px;
+        width: 160px;
     }
 }
 
-@media (min-width: 768px){
-
-body{
-    width: 500px;    
-}
-section{
-    display: flexbox;
-    flex-direction: column-reverse;
-}
-
-}
 
 

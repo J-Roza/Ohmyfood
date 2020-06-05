@@ -6,12 +6,22 @@ html {
 }
 
 body {
-  width: 8vw;
+  background-color: #25b377;
+  font-size: 1.8em;
+  /* base font-size is equivalent "14px" */
 }
 
-footer, h1, .futur {
+footer, header, .futur {
   color: #fdcb46;
   background-color: #579c87;
+}
+
+header {
+  font-size: 6rem;
+}
+
+section {
+  display: flex;
 }
 
 img {
@@ -19,18 +29,7 @@ img {
   box-shadow: 5px 5px 5px darkgray;
 }
 img:hover {
-  width: 170px;
-}
-
-@media (min-width: 768px) {
-  body {
-    width: 500px;
-  }
-
-  section {
-    display: flexbox;
-    flex-direction: column-reverse;
-  }
+  width: 160px;
 }
 
 /*# sourceMappingURL=style.css.map */
