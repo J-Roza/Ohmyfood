@@ -6,7 +6,6 @@ html {
 }
 
 body {
-  background-color: #25b377;
   font-size: 1.8em;
   /* base font-size is equivalent "14px" */
 }
@@ -18,18 +17,37 @@ footer, header, .futur {
 
 header {
   font-size: 6rem;
+  text-align: center;
+  margin-top: 0;
 }
 
-section {
+main {
   display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img {
-  width: 150px;
+  width: 300px;
   box-shadow: 5px 5px 5px darkgray;
 }
 img:hover {
   width: 160px;
+}
+
+a {
+  color: #fdcb46;
+  text-decoration: none;
+}
+
+.futur {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  text-align: center;
+  width: 15vw;
 }
 
 /*# sourceMappingURL=style.css.map */
