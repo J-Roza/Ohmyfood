@@ -1,0 +1,16 @@
+@font-face{
+    font-family: "Grotesk_Light";
+    src: url("font/Grotesk_Light.ttf") format("truetype");
+}
+
+Grotesk Medium
+
+html{    
+    font-size: .625em; /* fallback IE8+ */
+    font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+
+body{
+    font-size: 1.8em; /* base font-size is equivalent "14px" */
+    font-family: "Grotesk_Light"  
+}

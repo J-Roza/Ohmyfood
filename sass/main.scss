@@ -1,54 +1,22 @@
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #579c87;
-$secondary-color: #fdcb46;
+// ********************* \\
+// ***** 01 - Variables ***** \\
+@import "./utils/variables";
 
 
-html{    
-    font-size: .625em; /* fallback IE8+ */
-    font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
-}
+// ********************* \\
+// ***** 02 - Base ***** \\
+@import "./base/base";
+@import "./base/typography";
 
-body{
-    font-size: 1.8em; /* base font-size is equivalent "14px" */  
-}
 
-footer, header, .futur{
-    color: $secondary-color;
-    background-color: $primary-color;
-}
+// ********************* \\
+// ***** 03 - Layout ***** \\
+@import "./Layout/header";
+@import "./Layout/footer";
 
-header{    
-    font-size: 6rem;
-    text-align: center;
-    margin-top: 0;
-}
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    width: 800px;   
-    margin-left: auto;
-    margin-right: auto;
-}
+// ********************* \\
+// ***** 04 - Pages ***** \\
+@import "./pages/work";
 
-img{
-    width: 300px;
-    box-shadow: 5px 5px 5px darkgray;
-    &:hover {
-        width: 160px;
-    }
-}
-
-a{
-    color: $secondary-color;
-    text-decoration: none;
-}
-
-.futur{
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 25px;
-    text-align: center;
-    width: 15vw;
-}
 

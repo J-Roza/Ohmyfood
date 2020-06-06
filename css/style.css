@@ -1,4 +1,22 @@
-html {
+a {
+  color: #fdcb46;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Grotesk_Light";
+  src: url("font/Grotesk_Light.ttf") format("truetype");
+}
+Grotesk Medium html {
   font-size: 0.625em;
   /* fallback IE8+ */
   font-size: calc(1em * .625);
@@ -8,46 +26,61 @@ html {
 body {
   font-size: 1.8em;
   /* base font-size is equivalent "14px" */
+  font-family: "Grotesk_Light";
 }
 
-footer, header, .futur {
+header {
+  font-size: 3rem;
+  padding: 30px;
+  text-align: center;
   color: #fdcb46;
   background-color: #579c87;
 }
 
-header {
-  font-size: 6rem;
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 5rem;
+  padding: 10px;
   text-align: center;
-  margin-top: 0;
+  color: #fdcb46;
+  background-color: #579c87;
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap;
-  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
-img {
-  width: 300px;
+.menu_img {
+  width: 350px;
   box-shadow: 5px 5px 5px darkgray;
 }
-img:hover {
-  width: 160px;
+.menu_img:hover {
+  width: 320px;
 }
 
-a {
-  color: #fdcb46;
-  text-decoration: none;
+.menu_name {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .futur {
+  width: 50vw;
+  font-size: 3rem;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 25px;
+  border-radius: 15px;
   text-align: center;
-  width: 15vw;
+  color: #fdcb46;
+  background-color: #579c87;
+}
+
+.main_index {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
 }
 
 /*# sourceMappingURL=style.css.map */

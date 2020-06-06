@@ -1,0 +1,39 @@
+main {       
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.menu_img{
+    width: 350px;
+    box-shadow: 5px 5px 5px darkgray;
+    &:hover {
+        width: 320px;
+    }
+}
+
+.menu_name{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.futur{
+    width: 50vw;
+    font-size: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    text-align: center;
+    color: $secondary-color;
+    background-color: $primary-color;
+}
+
+
+.main_index{
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px; 
+}
