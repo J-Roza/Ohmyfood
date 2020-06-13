@@ -14,7 +14,7 @@ body {
 
 @font-face {
   font-family: "Grotesk_Light";
-  src: url("font/Grotesk_Light.ttf") format("truetype");
+  src: url("Grotesk_Light.ttf") format("truetype");
 }
 Grotesk Medium html {
   font-size: 0.625em;
@@ -39,10 +39,13 @@ header {
 
 footer {
   display: flex;
-  justify-content: space-between;
-  font-size: 5rem;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  left: 0;
   padding: 10px;
-  text-align: center;
+  justify-content: space-between;
+  font-size: 3rem;
   color: #fdcb46;
   background-color: #579c87;
 }
@@ -50,14 +53,49 @@ footer {
 main {
   margin-left: auto;
   margin-right: auto;
+  min-height: calc(100vh - 70px);
+}
+
+form input {
+  border: 2px solid #579c87;
+  border-radius: 100rem;
+  color: #579c87;
+  font-size: 2.5rem;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  transition: background-color 500ms;
+}
+form input:focus {
+  border: 2px solid #fdcb46;
+}
+form input:not(:focus):invalid {
+  background: #b20a37;
+  border: 2px solid #b20a37;
+  color: #fff;
 }
 
 .menu_img {
   width: 350px;
-  box-shadow: 5px 5px 5px darkgray;
+  box-shadow: 0px 0px 10px 6px #dadada;
+  transform: scale(1);
+  transition: transform 200ms;
 }
 .menu_img:hover {
-  width: 320px;
+  transform: scale(1.1);
+}
+.menu_img--mod {
+  display: block;
+  width: 500px;
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(1);
+  transition: transform 200ms;
+}
+.menu_img--mod:hover {
+  transform: scale(1.5);
 }
 
 .menu_name {
@@ -66,21 +104,71 @@ main {
   text-align: center;
 }
 
-.futur {
-  width: 50vw;
-  font-size: 3rem;
+.btn {
+  width: 15rem;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 15px;
-  text-align: center;
-  color: #fdcb46;
+  margin-bottom: 2vw;
   background-color: #579c87;
+  border-radius: 2rem;
+  text-align: center;
+  cursor: pointer;
+  color: #fdcb46;
+  font-size: 2rem;
+  overflow: hidden;
+  position: relative;
+  transition: transform 450ms, background-color 300ms 150ms;
+}
+.btn:hover {
+  transform: scale(1.13);
+  background-color: #399276;
 }
 
 .main_index {
   display: flex;
   flex-wrap: wrap;
   width: 900px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
