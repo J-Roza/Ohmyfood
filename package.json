@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "sass": "sass --watch ./css/sass/main.scss:./css/style.css",
     "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "author": "Jonathan Roza",
   "license": "ISC",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0"
+  }
 }
-
-
-
