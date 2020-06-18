@@ -5,7 +5,7 @@ main {
     
 }
 
-.menu_img{
+.scale_img{
     width: 350px;
     box-shadow: 0px 0px 10px 6px rgb(218, 218, 218);
     transform: scale(1);
@@ -13,20 +13,6 @@ main {
     &:hover {
         transform: scale(1.10);
     }
-    &--mod{
-        display: block;
-        width: 700px;   
-        position: relative; 
-        margin-left: auto;
-        margin-right: auto;
-        transform: scale(1);
-        transition: transform 200ms;
-    }
-}
-
-.menu_main{
-    width: 50vw;
-    background-color: $cd-menu1;
 }
 
 
@@ -66,10 +52,34 @@ main {
 
 
 
-
-
-
-
-
-
 ////////////////TEST/////////////
+
+/* Underline From Left */
+.hvr-underline-from-left {
+    vertical-align: middle;
+    display: inline-block;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: $cd-secondary;
+    height: 4px;
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
+  }
+  
+  
+  
+  
