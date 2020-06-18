@@ -2,6 +2,10 @@ h1 {
   margin: 0;
 }
 
+h1, h2, h3 {
+  text-align: center;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,6 +14,10 @@ body {
 a {
   text-decoration: none;
   color: #fdcb46;
+}
+
+ul {
+  list-style: none;
 }
 
 @font-face {
@@ -140,10 +148,9 @@ form input:not(:focus):invalid {
   transition: transform 200ms;
 }
 
-.menu_name {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
+.menu_main {
+  width: 50vw;
+  background-color: #fcdfdb;
 }
 
 .btn_main {
