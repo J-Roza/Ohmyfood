@@ -10,10 +10,11 @@ footer{
 }
 
 .btn_foot{
-    color: $cd-secondary;    
-    background-color: $cd-primary;
     border: none;
     font-size: 3rem;
+    text-align: center;
+    color: $cd-secondary;    
+    background-color: $cd-primary;    
     &:hover{
         animation: shake 0.5s;
         animation-iteration-count: infinite;

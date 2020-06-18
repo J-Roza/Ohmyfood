@@ -19,8 +19,6 @@ main {
 .btn {
     display: block;
     width: 15rem;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 2vw;    
     border-radius: 2rem;
     font-size: 2rem;
@@ -46,13 +44,24 @@ main {
 }
 
 
+.width_menu{
+    width: 80vw;
+    background-color: $cd-menu1-primary;
+}
 
-
-
+article{
+    font-family: "Devonshire-Regular";
+    color: $cd-menu1-secondary;
+    font-size: 4rem;
+}
 
 
 
 ////////////////TEST/////////////
+
+
+
+
 
 /* Underline From Left */
 .hvr-underline-from-left {
@@ -70,7 +79,7 @@ main {
     left: 0;
     right: 100%;
     bottom: 0;
-    background: $cd-secondary;
+    background: $cd-menu1-secondary;
     height: 4px;
     transition-property: right;
     transition-duration: 0.3s;
@@ -82,4 +91,16 @@ main {
   
   
   
-  
+  @media (min-width: 768px) {
+    article{
+        
+        font-size: 5rem;
+    }
+
+    
+    .width_menu{
+        width: 60vw;
+    }
+
+
+  }    
