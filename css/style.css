@@ -26,6 +26,10 @@ ul {
   padding: 0;
 }
 
+section {
+  width: 66vw;
+}
+
 .txt_center {
   text-align: center;
 }
@@ -130,6 +134,12 @@ main {
   min-height: calc(100vh - 70px);
 }
 
+article {
+  font-size: 2rem;
+  font-family: "Devonshire-Regular";
+  color: #6b4649;
+}
+
 .scale_img {
   width: 350px;
   box-shadow: 0px 0px 10px 6px #dadada;
@@ -165,17 +175,16 @@ main {
 }
 
 .width_menu {
-  width: 80vw;
+  width: 90vw;
   background-color: #fcdfdb;
 }
 
-article {
-  font-family: "Devonshire-Regular";
-  color: #6b4649;
-  font-size: 4rem;
+.price {
+  float: right;
+  margin-top: -50px;
 }
 
-/* Underline From Left */
+/*Underline From Left */
 .hvr-underline-from-left {
   vertical-align: middle;
   display: inline-block;
@@ -205,11 +214,16 @@ article {
 
 @media (min-width: 768px) {
   article {
-    font-size: 5rem;
+    font-size: 4rem;
+  }
+
+  .price {
+    float: right;
+    margin-top: -85px;
   }
 
   .width_menu {
-    width: 60vw;
+    width: 70vw;
   }
 }
 

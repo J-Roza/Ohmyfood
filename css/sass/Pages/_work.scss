@@ -5,6 +5,12 @@ main {
     
 }
 
+article{
+    font-size: 2rem;
+    font-family: "Devonshire-Regular";
+    color: $cd-menu1-secondary;    
+}
+
 .scale_img{
     width: 350px;
     box-shadow: 0px 0px 10px 6px rgb(218, 218, 218);
@@ -35,8 +41,6 @@ main {
 }
 
 
-
-
 .main_index{
     display: flex;
     flex-wrap: wrap;
@@ -45,14 +49,14 @@ main {
 
 
 .width_menu{
-    width: 80vw;
+    width: 90vw;
     background-color: $cd-menu1-primary;
 }
 
-article{
-    font-family: "Devonshire-Regular";
-    color: $cd-menu1-secondary;
-    font-size: 4rem;
+
+.price{
+    float: right;
+    margin-top: -50px;
 }
 
 
@@ -63,7 +67,8 @@ article{
 
 
 
-/* Underline From Left */
+/*Underline From Left */
+
 .hvr-underline-from-left {
     vertical-align: middle;
     display: inline-block;
@@ -88,19 +93,23 @@ article{
   .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
     right: 0;
   }
-  
+
   
   
   @media (min-width: 768px) {
     article{
-        
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
-    
-    .width_menu{
-        width: 60vw;
+    .price{
+        float: right;
+        margin-top: -85px;
     }
+
+    .width_menu{
+        width: 70vw;
+    }
+    
 
 
   }    
