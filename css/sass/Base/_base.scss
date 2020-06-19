@@ -27,8 +27,7 @@ ul{
 }
 
 section{
-    width: 66vw;
-    
+    width: 50vw;    
 }
 
 .txt_center{
@@ -40,4 +39,33 @@ section{
     margin-right: auto;
 }
 
+.padding_top{
+    padding-top: 50px;
+}
 
+.padding_right{
+    padding-right: 50px;
+}
+
+.padding_left{
+    padding-left: 50px;
+}
+
+.margin_null{
+    margin: 0;
+}
+
+
+.flexbox{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media (min-width: 768px) {
+    h3{
+        font-size: 5rem;
+    }
+
+}
