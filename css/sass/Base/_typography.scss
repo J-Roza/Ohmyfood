@@ -1,0 +1,20 @@
+@font-face{
+    font-family: "Grotesk-Light";
+    src: url("./fonts/Grotesk-Light.ttf");
+}
+
+@font-face{
+    font-family: "Devonshire-Regular";
+    src: url("./fonts/Devonshire-Regular.ttf");
+}
+
+
+html{    
+    font-size: .625em; /* fallback IE8+ */
+    font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+
+body{
+    font-size: 1.8em; /* base font-size is equivalent "14px" */
+    font-family: "Grotesk-Light"  
+}

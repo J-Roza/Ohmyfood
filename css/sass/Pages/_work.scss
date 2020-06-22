@@ -1,0 +1,125 @@
+main {       
+    margin-left: auto;
+    margin-right: auto;
+    min-height: calc(100vh - 70px);
+    
+}
+
+article{
+    font-size: 2rem;
+    font-family: "Devonshire-Regular";
+    color: $cd-menu1-secondary;    
+}
+
+section{
+    width: 50vw;    
+}
+
+.scale_img{
+    width: 350px;
+    box-shadow: 0px 0px 10px 6px rgb(218, 218, 218);
+    transform: scale(1);
+    transition: transform 200ms;
+    &:hover {
+        transform: scale(1.10);
+    }
+}
+
+
+.btn {
+    display: block;
+    width: 15rem;
+    margin-bottom: 2vw;    
+    border-radius: 2rem;
+    font-size: 2rem;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    color: $cd-secondary;
+    background-color: $cd-primary;    
+    transition: transform 450ms, background-color 300ms 150ms;
+        &:hover {
+        transform: scale(1.13);
+        background-color: $cd-btn-end;
+    }
+}
+
+
+.main_index{
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+}
+
+
+.width_menu{
+    width: 90vw;
+    background-color: $cd-menu1-primary;
+}
+
+.width_img{
+    align-content: center;
+    font-size: 100px;
+    background: -webkit-linear-gradient(0.40turn, rgb(255, 187, 0), rgb(248, 0, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.price{
+    float: right;
+    margin-top: -50px;
+}
+
+
+////////////////TEST/////////////
+
+
+
+
+
+
+/*Underline From Left */
+
+.hvr-underline-from-left {
+    vertical-align: middle;
+    display: inline-block;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: $cd-menu1-secondary;
+    height: 4px;
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
+  }
+
+  
+  
+  @media (min-width: 768px) {
+    article{
+        font-size: 3rem;
+    }
+
+    .price{
+        float: right;
+        margin-top: -85px;
+    }
+
+    .width_menu{
+        width: 80vw;
+    }
+  }    

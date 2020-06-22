@@ -2,6 +2,14 @@ h1 {
   margin: 0;
 }
 
+h1, h2, h3 {
+  text-align: center;
+}
+
+h2, h3 {
+  font-weight: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,11 +20,81 @@ a {
   color: #fdcb46;
 }
 
-@font-face {
-  font-family: "Grotesk_Light";
-  src: url("Grotesk_Light.ttf") format("truetype");
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-Grotesk Medium html {
+
+.padding_right {
+  display: none;
+}
+
+.padding_left {
+  display: none;
+}
+
+.txt_center {
+  text-align: center;
+}
+
+.block_center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.padding_top {
+  padding-top: 50px;
+}
+
+.margin_null {
+  margin: 0;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .padding_right {
+    display: inline-block;
+    padding-right: 50px;
+    width: 10vw;
+  }
+
+  .padding_left {
+    display: inline-block;
+    padding-left: 50px;
+    width: 10vw;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  h3 {
+    font-size: 5rem;
+  }
+
+  .padding_right {
+    display: inline-block;
+    padding-right: 50px;
+    width: 15vw;
+  }
+
+  .padding_left {
+    display: inline-block;
+    padding-left: 50px;
+    width: 15vw;
+  }
+}
+@font-face {
+  font-family: "Grotesk-Light";
+  src: url("./fonts/Grotesk-Light.ttf");
+}
+@font-face {
+  font-family: "Devonshire-Regular";
+  src: url("./fonts/Devonshire-Regular.ttf");
+}
+html {
   font-size: 0.625em;
   /* fallback IE8+ */
   font-size: calc(1em * .625);
@@ -26,7 +104,7 @@ Grotesk Medium html {
 body {
   font-size: 1.8em;
   /* base font-size is equivalent "14px" */
-  font-family: "Grotesk_Light";
+  font-family: "Grotesk-Light";
 }
 
 header {
@@ -51,10 +129,11 @@ footer {
 }
 
 .btn_foot {
-  color: #fdcb46;
-  background-color: #579c87;
   border: none;
   font-size: 3rem;
+  text-align: center;
+  color: #fdcb46;
+  background-color: #579c87;
 }
 .btn_foot:hover {
   animation: shake 0.5s;
@@ -102,55 +181,29 @@ main {
   min-height: calc(100vh - 70px);
 }
 
-form input {
-  border: 2px solid #579c87;
-  border-radius: 100rem;
-  color: #579c87;
-  font-size: 2.5rem;
-  outline: none;
-  padding: 0.5rem 1.5rem;
-  width: 100%;
-  transition: background-color 500ms;
-}
-form input:focus {
-  border: 2px solid #fdcb46;
-}
-form input:not(:focus):invalid {
-  background: #b20a37;
-  border: 2px solid #b20a37;
-  color: #fff;
+article {
+  font-size: 2rem;
+  font-family: "Devonshire-Regular";
+  color: #6b4649;
 }
 
-.menu_img {
+section {
+  width: 50vw;
+}
+
+.scale_img {
   width: 350px;
   box-shadow: 0px 0px 10px 6px #dadada;
   transform: scale(1);
   transition: transform 200ms;
 }
-.menu_img:hover {
+.scale_img:hover {
   transform: scale(1.1);
 }
-.menu_img--mod {
-  display: block;
-  width: 700px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  transform: scale(1);
-  transition: transform 200ms;
-}
 
-.menu_name {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.btn_main {
+.btn {
   display: block;
   width: 15rem;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 2vw;
   border-radius: 2rem;
   font-size: 2rem;
@@ -161,7 +214,7 @@ form input:not(:focus):invalid {
   background-color: #579c87;
   transition: transform 450ms, background-color 300ms 150ms;
 }
-.btn_main:hover {
+.btn:hover {
   transform: scale(1.13);
   background-color: #399276;
 }
@@ -172,45 +225,66 @@ form input:not(:focus):invalid {
   width: 900px;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%;
-  /* Full width */
-  padding: 12px;
-  /* Some padding */
-  border: 1px solid #ccc;
-  /* Gray border */
-  border-radius: 4px;
-  /* Rounded borders */
-  box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
-  margin-top: 6px;
-  /* Add a top margin */
-  margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical;
+.width_menu {
+  width: 90vw;
+  background-color: #fcdfdb;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.width_img {
+  align-content: center;
+  font-size: 100px;
+  background: -webkit-linear-gradient(0.4turn, #ffbb00, #f80000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
+.price {
+  float: right;
+  margin-top: -50px;
 }
 
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+/*Underline From Left */
+.hvr-underline-from-left {
+  vertical-align: middle;
+  display: inline-block;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #6b4649;
+  height: 4px;
+  transition-property: right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  article {
+    font-size: 3rem;
+  }
+
+  .price {
+    float: right;
+    margin-top: -85px;
+  }
+
+  .width_menu {
+    width: 80vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
