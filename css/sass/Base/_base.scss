@@ -47,13 +47,17 @@ ul{
     margin: 0;
 }
 
+.flexbox{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    margin-top: 30px;
+}
+
 
 @media ( min-width : 768px ) {  
-    .flexbox{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap; 
-    }
+
+    
 }
 
  
@@ -64,8 +68,8 @@ ul{
     }
 
     .flexbox{
-        justify-content: space-around;
-        flex-wrap: wrap; 
-        margin-top: 30px;
+        
+        flex-wrap: nowrap; 
+        
     }
 }
