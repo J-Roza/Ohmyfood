@@ -1,8 +1,7 @@
 main {       
-    margin-left: auto;
-    margin-right: auto;
     min-height: calc(100vh - 70px);
-    
+    margin: 0 auto;
+    width: 15em
 }
 
 article{
@@ -16,40 +15,11 @@ section{
 }
 
 .scale_img{
-    width: 350px;
+    width: 45vw;
     box-shadow: 0px 0px 10px 6px rgb(218, 218, 218);
-    transform: scale(1);
-    transition: transform 200ms;
-    &:hover {
-        transform: scale(1.10);
-    }
 }
 
 
-.btn {
-    display: block;
-    width: 15rem;
-    margin-bottom: 2vw;    
-    border-radius: 2rem;
-    font-size: 2rem;
-    overflow: hidden;
-    text-align: center;
-    cursor: pointer;
-    color: $cd-secondary;
-    background-color: $cd-primary;    
-    transition: transform 450ms, background-color 300ms 150ms;
-        &:hover {
-        transform: scale(1.13);
-        background-color: $cd-btn-end;
-    }
-}
-
-
-.main_index{
-    display: flex;
-    flex-wrap: wrap;
-    width: 900px;
-}
 
 
 .width_menu{
@@ -72,16 +42,15 @@ section{
     margin-top: -50px;
 }
 
+.padding_right{
+    display: none;
+}
 
-////////////////TEST/////////////
-
-
-
-
-
+.padding_left{
+    display: none;
+}
 
 /*Underline From Left */
-
 .hvr-underline-from-left {
     vertical-align: middle;
     display: inline-block;
@@ -110,8 +79,17 @@ section{
   
   
   @media (min-width: 768px) {
+    main{
+        display: flex;
+        width: 55em;
+    }
+
     article{
         font-size: 3rem;
+    }
+
+    .scale_img{
+        width: 40vw;
     }
 
     .price{
@@ -122,4 +100,73 @@ section{
     .width_menu{
         width: 80vw;
     }
+
+    .padding_right{
+        display: inline-block;
+        padding-right: 50px;
+        width: 10vw;
+    }
+    
+    .padding_left{
+        display: inline-block;
+        padding-left: 50px;
+        width: 10vw;
+    }
+
+    .btn {
+        display: block;
+        width: 35rem;
+        margin: 0 auto 2vw;    
+        border-radius: 2rem;
+        font-size: 5rem;
+        overflow: hidden;
+        text-align: center;
+        cursor: pointer;
+        color: $cd-secondary;
+        background-color: $cd-primary;    
+        
+    }
+
   }    
+
+  @media ( min-width : 1200px ) {
+    .padding_right{
+        display: inline-block;
+        padding-right: 50px;
+        width: 15vw;
+    }
+    
+    .padding_left{
+        display: inline-block;
+        padding-left: 50px;
+        width: 15vw;
+    } 
+
+    .scale_img{
+        width: 20vw;
+        box-shadow: 0px 0px 10px 6px rgb(218, 218, 218);
+        transform: scale(1);
+        transition: transform 200ms;
+        &:hover {
+            transform: scale(1.10);
+        }
+    }
+
+    .btn {
+        display: block;
+        width: 20rem;
+        margin: 0 auto 2vw;    
+        border-radius: 2rem;
+        font-size: 2rem;
+        overflow: hidden;
+        text-align: center;
+        cursor: pointer;
+        color: $cd-secondary;
+        background-color: $cd-primary;    
+        transition: transform 450ms, background-color 300ms 150ms;
+            &:hover {
+            transform: scale(1.13);
+            background-color: $cd-btn-end;
+        }
+    }
+}
