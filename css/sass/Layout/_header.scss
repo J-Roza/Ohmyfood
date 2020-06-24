@@ -1,6 +1,6 @@
-header{    
-    font-size: 3rem;
-    padding: 30px;
+.header_top{    
+    font-size: 2rem;
+    padding: 25px;
     text-align: center;
     color: $cd-secondary;
     background-color: $cd-primary;
@@ -9,7 +9,7 @@ header{
 
 @media ( min-width : 768px ) {  
 
-    header{
+    .header_top{
         font-size: 5rem;
     }
 }

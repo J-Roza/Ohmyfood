@@ -64,12 +64,11 @@ ul{
 
 @media ( min-width : 1200px ) {
     h3{
-        font-size: 5rem;
+        font-size: 6rem;
     }
 
-    .flexbox{
-        
-        flex-wrap: nowrap; 
-        
+    .flexbox{        
+        flex-wrap: nowrap;
+        width: 50vw;         
     }
 }
