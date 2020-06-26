@@ -8,6 +8,14 @@ section{
     width: 70vw;    
 }
 
+.bar_menu{
+    display: flex;
+    flex-wrap: nowrap; 
+    max-width: 100%;
+    width: 20%;
+    height: auto;
+}
+
 .scale_img{
     width: 45vw;
     box-shadow: 0px 0px 10px 6px rgb(218, 218, 218);
@@ -38,9 +46,19 @@ section{
     background-color: $cd-menu1-primary;
 }
 
-.width_img{
+.note_top{
     align-content: center;
+    background: -webkit-linear-gradient(0.40turn, rgb(255, 187, 0), rgb(248, 0, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
     font-size: 10vw;
+}
+
+.note_bottom{
+    align-content: center;
+    font-size: 5vw;    
     background: -webkit-linear-gradient(0.40turn, rgb(255, 187, 0), rgb(248, 0, 0));
     background-clip: text;
     -webkit-background-clip: text;
@@ -48,11 +66,11 @@ section{
 }
 
 .padding_right{
-    display: none;
+    display: inline-block;
 }
 
 .padding_left{
-    display: none;
+    display: inline-block;
 }
 
 /*Underline From Left */
@@ -88,35 +106,35 @@ section{
     color: $cd-menu1-secondary;    
 }
 
-.flex_menu{
+.flex_column{
     display: flex;
+    flex-direction: column;
+}
+
+.flex_space-between{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.flex_nowrap{
+    flex-shrink: 0;
 }
 
 
-span{
-    float: left;
-    width: 10vw;
-    text-align: center;
-    display: block;
-    &:first-child {
-      width: 60vw;
-      text-align: left;
-    }
-}
-
-.price{
-    padding-bottom: 30px;
-}
 
 
 @media (min-width: 768px) {
     main{
         margin-left: auto;
         margin-right: auto;
+        width: auto;
     }
 
-    article{
-        font-size: 3rem;
+    .bar_menu{
+        max-width: 100%;
+        height: auto;
+        width: 20%; 
     }
 
     .btn{
@@ -134,48 +152,22 @@ span{
         width: 80vw;
     }
 
-    .padding_right{
-        display: inline-block;
-        padding-right: 50px;
-        width: 10vw;
-    }
-    
-    .padding_left{
-        display: inline-block;
-        padding-left: 50px;
-        width: 10vw;
-    }
+
       ////////Menu1///////
     .style_menu1{
         font-size: 5rem;
     }
-
-    .price{
-        padding-bottom: 73px;
-    }
-
-    span{
-        width: 10vw;
-        &:first-child {
-          width: 60vw;
-        }
-    }
-   
 }    
 
 
 @media ( min-width : 1200px ) {
 
     .padding_right{
-        display: inline-block;
         padding-right: 20px;
-        width: 15vw;
     }
     
     .padding_left{
-        display: inline-block;
         padding-left: 20px;
-        width: 15vw;
     } 
 
     .scale_img{
@@ -197,7 +189,9 @@ span{
         font-size: 5rem;
     }
 
-    .price{
-        padding-bottom: 0;
+    .bar_menu{
+        max-width: 100%;
+        height: auto;
+        width: 30% 
     }
 }
