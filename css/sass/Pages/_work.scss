@@ -1,30 +1,25 @@
 main {       
-    margin-left: auto;
-    margin-right: auto;
     min-height: calc(100vh - 70px);
-    
-}
-
-article{
-    font-size: 2rem;
-    font-family: "Devonshire-Regular";
-    color: $cd-menu1-secondary;    
+    margin: 0 auto;
+    width: 15em
 }
 
 section{
-    width: 50vw;    
+    width: 70vw;    
+}
+
+.bar_menu{
+    display: flex;
+    flex-wrap: nowrap; 
+    max-width: 100%;
+    width: 20%;
+    height: auto;
 }
 
 .scale_img{
-    width: 350px;
+    width: 45vw;
     box-shadow: 0px 0px 10px 6px rgb(218, 218, 218);
-    transform: scale(1);
-    transition: transform 200ms;
-    &:hover {
-        transform: scale(1.10);
-    }
 }
-
 
 .btn {
     display: block;
@@ -33,6 +28,7 @@ section{
     border-radius: 2rem;
     font-size: 2rem;
     overflow: hidden;
+    margin: 15px auto;
     text-align: center;
     cursor: pointer;
     color: $cd-secondary;
@@ -45,43 +41,39 @@ section{
 }
 
 
-.main_index{
-    display: flex;
-    flex-wrap: wrap;
-    width: 900px;
-}
-
-
 .width_menu{
     width: 90vw;
     background-color: $cd-menu1-primary;
 }
 
-.width_img{
+.note_top{
     align-content: center;
-    font-size: 100px;
+    background: -webkit-linear-gradient(0.40turn, rgb(255, 187, 0), rgb(248, 0, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-size: 10vw;
+}
+
+.note_bottom{
+    align-content: center;
+    font-size: 5vw;    
     background: -webkit-linear-gradient(0.40turn, rgb(255, 187, 0), rgb(248, 0, 0));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-
-.price{
-    float: right;
-    margin-top: -50px;
+.padding_right{
+    display: inline-block;
 }
 
-
-////////////////TEST/////////////
-
-
-
-
-
+.padding_left{
+    display: inline-block;
+}
 
 /*Underline From Left */
-
 .hvr-underline-from-left {
     vertical-align: middle;
     display: inline-block;
@@ -107,19 +99,99 @@ section{
     right: 0;
   }
 
-  
-  
-  @media (min-width: 768px) {
-    article{
-        font-size: 3rem;
+  ////////Menu1///////
+  .style_menu1{
+    font-size: 2rem;
+    font-family: "Devonshire-Regular";
+    color: $cd-menu1-secondary;    
+}
+
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_space-between{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.flex_nowrap{
+    flex-shrink: 0;
+}
+
+
+
+
+@media (min-width: 768px) {
+    main{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
     }
 
-    .price{
-        float: right;
-        margin-top: -85px;
+    .bar_menu{
+        max-width: 100%;
+        height: auto;
+        width: 20%; 
     }
+
+    .btn{
+        font-size: 4rem;
+        width: 30vw;
+        margin: 35px auto;
+
+    }
+
+    .scale_img{
+        width: 40vw;
+    }  
 
     .width_menu{
         width: 80vw;
     }
-  }    
+
+
+      ////////Menu1///////
+    .style_menu1{
+        font-size: 5rem;
+    }
+}    
+
+
+@media ( min-width : 1200px ) {
+
+    .padding_right{
+        padding-right: 20px;
+    }
+    
+    .padding_left{
+        padding-left: 20px;
+    } 
+
+    .scale_img{
+        width: 20vw;
+        box-shadow: 0px 0px 10px 6px rgb(218, 218, 218);
+        transform: scale(1);
+        transition: transform 200ms;
+        &:hover {
+            transform: scale(1.10);
+        }
+    }
+
+    .btn {
+        width: 20vw;
+    }
+
+      ////////Menu1///////
+    .style_menu1{
+        font-size: 5rem;
+    }
+
+    .bar_menu{
+        max-width: 100%;
+        height: auto;
+        width: 30% 
+    }
+}
