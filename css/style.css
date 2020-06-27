@@ -49,6 +49,10 @@ ul {
   padding-right: 10px;
 }
 
+.padding_left {
+  padding-left: 10px;
+}
+
 .margin_null {
   margin: 0;
 }
@@ -77,6 +81,14 @@ ul {
 @font-face {
   font-family: "Devonshire-Regular";
   src: url("./fonts/Devonshire-Regular.ttf");
+}
+@font-face {
+  font-family: "Croissantone-regular";
+  src: url("./fonts/Croissantone-regular.ttf");
+}
+@font-face {
+  font-family: "Dancing-script";
+  src: url("./fonts/Dancing-script.ttf");
 }
 html {
   font-size: 0.625em;
@@ -212,25 +224,27 @@ section {
 
 .width_menu {
   width: 90vw;
+}
+
+.color_menu--bg1 {
   background-color: #fcdfdb;
 }
-
-.note_top {
-  align-content: center;
-  background: -webkit-linear-gradient(0.4turn, #ffbb00, #f80000);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 10vw;
+.color_menu--bg2 {
+  background-color: #fff5fe;
 }
 
-.note_bottom {
+.note--color {
   align-content: center;
-  font-size: 5vw;
   background: -webkit-linear-gradient(0.4turn, #ffbb00, #f80000);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.note--top {
+  font-size: 10vw;
+}
+.note--bottom {
+  font-size: 5vw;
 }
 
 .padding_right {
@@ -272,6 +286,26 @@ section {
 .style_menu1 {
   font-size: 2rem;
   font-family: "Devonshire-Regular";
+  color: #6b4649;
+}
+
+.style_menu2 {
+  font-size: 2rem;
+  font-family: "Croissantone-regular";
+}
+.style_menu2--a {
+  color: #c67412;
+}
+.style_menu2--b {
+  color: #a56799;
+}
+.style_menu2--c {
+  color: #6e4ccc;
+}
+
+.style_menu3 {
+  font-size: 2rem;
+  font-family: "Dancing-script";
   color: #6b4649;
 }
 
@@ -320,8 +354,16 @@ section {
   .style_menu1 {
     font-size: 5rem;
   }
+
+  .style_menu2 {
+    font-size: 3rem;
+  }
 }
 @media (min-width: 1200px) {
+  section {
+    width: 60vw;
+  }
+
   .padding_right {
     padding-right: 20px;
   }
@@ -340,12 +382,26 @@ section {
     transform: scale(1.1);
   }
 
+  .width_menu {
+    width: 60vw;
+  }
+
+  .flex_space-between {
+    display: flex;
+    justify-content: space-between;
+    padding: -200px;
+  }
+
   .btn {
     width: 20vw;
   }
 
   .style_menu1 {
-    font-size: 5rem;
+    font-size: 4rem;
+  }
+
+  .style_menu2 {
+    font-size: 3rem;
   }
 
   .bar_menu {

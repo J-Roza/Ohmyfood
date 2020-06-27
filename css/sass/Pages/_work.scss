@@ -40,29 +40,45 @@ section{
     }
 }
 
-
 .width_menu{
     width: 90vw;
-    background-color: $cd-menu1-primary;
 }
 
-.note_top{
-    align-content: center;
-    background: -webkit-linear-gradient(0.40turn, rgb(255, 187, 0), rgb(248, 0, 0));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+$bg-menus: (
+    bg1  : $cd-menu1-bg,
+    bg2  : $cd-menu2-bg,
     
-    font-size: 10vw;
+);
+
+$note-sizes:(
+    top : 10vw, 
+    bottom : 5vw,
+);
+
+
+@mixin color-background($key_arg) {
+    @each $key, $val in $key_arg {
+        &--#{$key}{background-color: $val}
+    }
 }
 
-.note_bottom{
-    align-content: center;
-    font-size: 5vw;    
+.color_menu{
+    @include color-background($bg-menus);
+}
+
+@mixin note-size($key_arg) {
+    &--#{color}{align-content: center;
     background: -webkit-linear-gradient(0.40turn, rgb(255, 187, 0), rgb(248, 0, 0));
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;}
+    @each $key, $val in $key_arg {
+        &--#{$key}{font-size: $val}
+    }
+}
+
+.note {
+    @include note-size($note-sizes);
 }
 
 .padding_right{
@@ -89,7 +105,7 @@ section{
     left: 0;
     right: 100%;
     bottom: 0;
-    background: $cd-menu1-secondary;
+    background: $cd-menu1-txt;
     height: 4px;
     transition-property: right;
     transition-duration: 0.3s;
@@ -103,8 +119,33 @@ section{
   .style_menu1{
     font-size: 2rem;
     font-family: "Devonshire-Regular";
-    color: $cd-menu1-secondary;    
+    color: $cd-menu1-txt;    
 }
+  ////////Menu2///////
+  .style_menu2{
+    font-size: 2rem;
+    font-family: "Croissantone-regular";
+    &--a{
+        color: $cd-menu2-a-txt;
+    }
+    &--b{
+        color: $cd-menu2-b-txt;
+    }
+    &--c{
+        color: $cd-menu2-c-txt;
+    }
+}
+
+ ////////Menu3///////
+ .style_menu3{
+    font-size: 2rem;
+    font-family: "Dancing-script";
+    color: $cd-menu1-txt;    
+}
+
+
+////////////////////
+
 
 .flex_column{
     display: flex;
@@ -157,10 +198,19 @@ section{
     .style_menu1{
         font-size: 5rem;
     }
+
+     ////////Menu2///////
+     .style_menu2{
+        font-size: 3rem;
+    }
 }    
 
 
 @media ( min-width : 1200px ) {
+
+    section{
+        width: 60vw;    
+    }    
 
     .padding_right{
         padding-right: 20px;
@@ -180,13 +230,28 @@ section{
         }
     }
 
+    .width_menu{
+        width: 60vw;
+    }
+
+    .flex_space-between{
+        display: flex;
+        justify-content: space-between;
+        padding: -200px;
+    }
+
     .btn {
         width: 20vw;
     }
 
       ////////Menu1///////
     .style_menu1{
-        font-size: 5rem;
+        font-size: 4rem;
+    }
+
+     ////////Menu2///////
+     .style_menu2{
+        font-size: 3rem;
     }
 
     .bar_menu{
