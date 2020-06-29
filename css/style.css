@@ -45,6 +45,11 @@ ul {
   padding-top: 50px;
 }
 
+.padding-l-r {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .padding_right {
   padding-right: 10px;
 }
@@ -196,6 +201,10 @@ section {
   max-width: 100%;
   width: 20%;
   height: auto;
+}
+
+.rotate-bar_menu {
+  transform: rotate(180deg);
 }
 
 .scale_img {
