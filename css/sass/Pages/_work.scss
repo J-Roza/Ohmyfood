@@ -51,7 +51,7 @@ section{
 $bg-menus: (
     bg1  : $cd-menu1-bg,
     bg2  : $cd-menu2-bg,
-    
+    bg3  : $cd-menu3-bg,    
 );
 
 $note-sizes:(
@@ -142,9 +142,13 @@ $note-sizes:(
 
  ////////Menu3///////
  .style_menu3{
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: "Dancing-script";
-    color: $cd-menu1-txt;    
+    color: $cd-menu3-txt;    
+}
+
+.style_menu3-b{
+    font-family: "Soozle";
 }
 
 

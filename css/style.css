@@ -74,6 +74,10 @@ ul {
     font-size: 6rem;
   }
 
+  h4 {
+    font-size: 4rem;
+  }
+
   .flexbox {
     display: flex;
     flex-wrap: nowrap;
@@ -94,6 +98,10 @@ ul {
 @font-face {
   font-family: "Dancing-script";
   src: url("./fonts/Dancing-script.ttf");
+}
+@font-face {
+  font-family: "Soozle";
+  src: url("./fonts/Soozle.ttf");
 }
 html {
   font-size: 0.625em;
@@ -241,6 +249,9 @@ section {
 .color_menu--bg2 {
   background-color: #fff5fe;
 }
+.color_menu--bg3 {
+  background-color: #edefef;
+}
 
 .note--color {
   align-content: center;
@@ -313,9 +324,13 @@ section {
 }
 
 .style_menu3 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Dancing-script";
-  color: #6b4649;
+  color: #181919;
+}
+
+.style_menu3-b {
+  font-family: "Soozle";
 }
 
 .flex_column {
