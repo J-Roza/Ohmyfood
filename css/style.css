@@ -36,6 +36,14 @@ ul {
   text-align: center;
 }
 
+.txt_left {
+  text-align: left;
+}
+
+.txt_right {
+  text-align: right;
+}
+
 .block_center {
   margin-left: auto;
   margin-right: auto;
@@ -43,6 +51,10 @@ ul {
 
 .padding_top {
   padding-top: 50px;
+}
+
+.padding_bottom {
+  padding-bottom: 80px;
 }
 
 .padding-l-r {
@@ -66,7 +78,10 @@ ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 30px;
+}
+
+.img-orientation {
+  transform: scaleX(-1);
 }
 
 @media (min-width: 1200px) {
@@ -74,13 +89,25 @@ ul {
     font-size: 6rem;
   }
 
-  h4 {
-    font-size: 4rem;
+  li {
+    width: 40vw;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
   }
 
   .flexbox {
     display: flex;
     flex-wrap: nowrap;
+  }
+
+  .size_title_menu1 {
+    font-size: 5rem;
+  }
+  .size_title_menu2 {
+    font-size: 2.3rem;
   }
 }
 @font-face {
@@ -102,6 +129,10 @@ ul {
 @font-face {
   font-family: "Soozle";
   src: url("./fonts/Soozle.ttf");
+}
+@font-face {
+  font-family: "Kaushanscript";
+  src: url("./fonts/Kaushanscript-regular.ttf");
 }
 html {
   font-size: 0.625em;
@@ -200,7 +231,27 @@ main {
 }
 
 section {
-  width: 70vw;
+  width: 80vw;
+}
+
+.style_title-two {
+  background: linear-gradient(30deg, #c67412, #a56799, #6e4ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.style_title-three {
+  background: linear-gradient(30deg, #0e32de, #0b73f3, #4eaff7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing-script";
+}
+
+.style_title-four {
+  background: linear-gradient(0.3turn, #3d923a, #e4fecd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kaushanscript";
 }
 
 .bar_menu {
@@ -252,6 +303,9 @@ section {
 .color_menu--bg3 {
   background-color: #edefef;
 }
+.color_menu--bg4 {
+  background-color: #fdfffd;
+}
 
 .note--color {
   align-content: center;
@@ -267,10 +321,9 @@ section {
   font-size: 5vw;
 }
 
-.padding_right {
+.padding_righ {
   display: inline-block;
 }
-
 .padding_left {
   display: inline-block;
 }
@@ -310,7 +363,7 @@ section {
 }
 
 .style_menu2 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-family: "Croissantone-regular";
 }
 .style_menu2--a {
@@ -324,13 +377,15 @@ section {
 }
 
 .style_menu3 {
-  font-size: 3rem;
-  font-family: "Dancing-script";
+  font-size: 2rem;
+  font-family: "Soozle";
   color: #181919;
 }
 
-.style_menu3-b {
+.style_menu4 {
+  font-size: 2rem;
   font-family: "Soozle";
+  color: #4a4a4a;
 }
 
 .flex_column {
@@ -341,13 +396,47 @@ section {
 .flex_space-between {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
 }
 
 .flex_nowrap {
   flex-shrink: 0;
 }
 
+.in-work {
+  text-align: center;
+  font-size: 12rem;
+}
+
+.in-work span {
+  font-size: 15rem;
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.in-work span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.in-work span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
 @media (min-width: 768px) {
   main {
     margin-left: auto;
@@ -388,10 +477,9 @@ section {
     width: 60vw;
   }
 
-  .padding_right {
+  .padding_righ {
     padding-right: 20px;
   }
-
   .padding_left {
     padding-left: 20px;
   }
@@ -421,11 +509,11 @@ section {
   }
 
   .style_menu1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .style_menu2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .bar_menu {

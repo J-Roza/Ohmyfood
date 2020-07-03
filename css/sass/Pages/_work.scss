@@ -5,7 +5,28 @@ main {
 }
 
 section{
-    width: 70vw;    
+    width: 80vw;    
+}
+
+.style_title-two{
+    background: linear-gradient(30deg, $cd-menu2-a-txt, $cd-menu2-b-txt, $cd-menu2-c-txt);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.style_title-three{
+    background: linear-gradient(30deg, $cd-menu3-bar1, $cd-menu3-bar2, $cd-menu3-bar3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Dancing-script";
+
+}
+
+.style_title-four{
+    background: linear-gradient(0.30turn, $cd-menu4-bar1, $cd-menu4-bar2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Kaushanscript";
 }
 
 .bar_menu{
@@ -51,7 +72,8 @@ section{
 $bg-menus: (
     bg1  : $cd-menu1-bg,
     bg2  : $cd-menu2-bg,
-    bg3  : $cd-menu3-bg,    
+    bg3  : $cd-menu3-bg,
+    bg4  : $cd-menu4-bg,    
 );
 
 $note-sizes:(
@@ -85,13 +107,16 @@ $note-sizes:(
     @include note-size($note-sizes);
 }
 
-.padding_right{
-    display: inline-block;
+
+.padding{
+    &_righ{
+        display: inline-block;
+    }
+    &_left{
+        display: inline-block;
+    } 
 }
 
-.padding_left{
-    display: inline-block;
-}
 
 /*Underline From Left */
 .hvr-underline-from-left {
@@ -101,8 +126,8 @@ $note-sizes:(
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
-  }
-  .hvr-underline-from-left:before {
+}
+.hvr-underline-from-left:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -114,10 +139,11 @@ $note-sizes:(
     transition-property: right;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
-  }
-  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
-    right: 0;
-  }
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;   
+}
+
 
   ////////Menu1///////
   .style_menu1{
@@ -127,7 +153,8 @@ $note-sizes:(
 }
   ////////Menu2///////
   .style_menu2{
-    font-size: 2rem;
+    font-size: 1.3rem;
+
     font-family: "Croissantone-regular";
     &--a{
         color: $cd-menu2-a-txt;
@@ -142,19 +169,20 @@ $note-sizes:(
 
  ////////Menu3///////
  .style_menu3{
-    font-size: 3rem;
-    font-family: "Dancing-script";
+    font-size: 2rem;
+    font-family: "Soozle";
     color: $cd-menu3-txt;    
 }
 
-.style_menu3-b{
+ ////////Menu4///////
+.style_menu4{
+    font-size: 2rem;
     font-family: "Soozle";
+    color: $cd-menu4-txt;
 }
 
 
-////////////////////
-
-
+/////////FLEX///////////
 .flex_column{
     display: flex;
     flex-direction: column;
@@ -163,15 +191,51 @@ $note-sizes:(
 .flex_space-between{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+
 }
+
 
 .flex_nowrap{
     flex-shrink: 0;
 }
 
+.in-work {
+    text-align: center;
+    font-size: 12rem;
+}
 
+.in-work span {
+    font-size: 15rem;
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+  
+  .in-work span:nth-child(2) {
+    animation-delay: .2s;
+  }
+  
+  .in-work span:nth-child(3) {
+    animation-delay: .4s;
+  }
+  
+@keyframes blink {
+    0% {
+        opacity: .2;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .2;
+    }
+}
 
+///******************TABLETTE******************///
 
 @media (min-width: 768px) {
     main{
@@ -214,20 +278,22 @@ $note-sizes:(
 }    
 
 
+///******************PC******************///
 @media ( min-width : 1200px ) {
 
     section{
         width: 60vw;    
     }    
 
-    .padding_right{
-        padding-right: 20px;
+    .padding{
+        &_righ{
+            padding-right: 20px;
+        }
+        &_left{
+            padding-left: 20px;
+        } 
     }
     
-    .padding_left{
-        padding-left: 20px;
-    } 
-
     .scale_img{
         width: 20vw;
         box-shadow: 0px 0px 10px 6px rgb(218, 218, 218);
@@ -254,12 +320,12 @@ $note-sizes:(
 
       ////////Menu1///////
     .style_menu1{
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
      ////////Menu2///////
      .style_menu2{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .bar_menu{
