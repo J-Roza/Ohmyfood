@@ -26,12 +26,6 @@ ul {
   padding: 0;
 }
 
-.flex_center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .txt_center {
   text-align: center;
 }
@@ -57,27 +51,28 @@ ul {
   padding-bottom: 80px;
 }
 
+.padding_bottom_20px {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
 .padding-l-r {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.padding_right {
+.padding_righ {
+  display: inline-block;
   padding-right: 10px;
 }
-
 .padding_left {
+  display: inline-block;
   padding-left: 10px;
 }
 
 .margin_null {
   margin: 0;
-}
-
-.flexbox {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .img-orientation {
@@ -108,6 +103,10 @@ ul {
   }
   .size_title_menu2 {
     font-size: 2.3rem;
+  }
+
+  .padding_bottom_20px {
+    padding-left: 170px;
   }
 }
 @font-face {
@@ -227,7 +226,6 @@ footer {
 main {
   min-height: calc(100vh - 70px);
   margin: 0 auto;
-  width: 15em;
 }
 
 section {
@@ -321,11 +319,14 @@ section {
   font-size: 5vw;
 }
 
-.padding_righ {
-  display: inline-block;
-}
-.padding_left {
-  display: inline-block;
+.rectangle-menu {
+  margin-top: 50px;
+  height: 220px;
+  width: 45%;
+  line-height: 20px;
+  /* centrage vertical */
+  text-align: center;
+  /* centrage horizontal */
 }
 
 /*Underline From Left */
@@ -345,10 +346,10 @@ section {
   left: 0;
   right: 100%;
   bottom: 0;
-  background: #6b4649;
   height: 4px;
   transition-property: right;
   transition-duration: 0.3s;
+  background: #6b4649;
   transition-timing-function: ease-out;
 }
 
@@ -388,6 +389,18 @@ section {
   color: #4a4a4a;
 }
 
+.flexbox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .flex_column {
   display: flex;
   flex-direction: column;
@@ -399,6 +412,13 @@ section {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
+}
+
+.flex_space-between p:first-child {
+  width: 80%;
+}
+.flex_space-between p:last-child {
+  width: 10%;
 }
 
 .flex_nowrap {
@@ -438,12 +458,6 @@ section {
   }
 }
 @media (min-width: 768px) {
-  main {
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-  }
-
   .bar_menu {
     max-width: 100%;
     height: auto;
@@ -470,6 +484,11 @@ section {
 
   .style_menu2 {
     font-size: 3rem;
+  }
+
+  .rectangle-menu {
+    height: 600px;
+    width: 40%;
   }
 }
 @media (min-width: 1200px) {
@@ -520,6 +539,11 @@ section {
     max-width: 100%;
     height: auto;
     width: 30%;
+  }
+
+  .rectangle-menu {
+    height: 550px;
+    width: 20%;
   }
 }
 
