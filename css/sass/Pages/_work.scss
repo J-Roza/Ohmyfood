@@ -1,11 +1,31 @@
 main {       
     min-height: calc(100vh - 70px);
     margin: 0 auto;
-    width: 15em
 }
 
 section{
-    width: 70vw;    
+    width: 80vw;    
+}
+
+.style_title-two{
+    background: linear-gradient(30deg, $cd-menu2-a-txt, $cd-menu2-b-txt, $cd-menu2-c-txt);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.style_title-three{
+    background: linear-gradient(30deg, $cd-menu3-bar1, $cd-menu3-bar2, $cd-menu3-bar3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Dancing-script";
+
+}
+
+.style_title-four{
+    background: linear-gradient(0.30turn, $cd-menu4-bar1, $cd-menu4-bar2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Kaushanscript";
 }
 
 .bar_menu{
@@ -14,6 +34,10 @@ section{
     max-width: 100%;
     width: 20%;
     height: auto;
+}
+
+.rotate-bar_menu{
+    transform: rotate(180deg);
 }
 
 .scale_img{
@@ -40,37 +64,57 @@ section{
     }
 }
 
-
 .width_menu{
     width: 90vw;
-    background-color: $cd-menu1-primary;
 }
 
-.note_top{
-    align-content: center;
+$bg-menus: (
+    bg1  : $cd-menu1-bg,
+    bg2  : $cd-menu2-bg,
+    bg3  : $cd-menu3-bg,
+    bg4  : $cd-menu4-bg,    
+);
+
+$note-sizes:(
+    top : 10vw, 
+    bottom : 5vw,
+);
+
+
+@mixin color-background($key_arg) {
+    @each $key, $val in $key_arg {
+        &--#{$key}{background-color: $val}
+    }
+}
+
+.color_menu{
+    @include color-background($bg-menus);
+}
+
+@mixin note-size($key_arg) {
+    &--#{color}{align-content: center;
     background: -webkit-linear-gradient(0.40turn, rgb(255, 187, 0), rgb(248, 0, 0));
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-    font-size: 10vw;
+    -webkit-text-fill-color: transparent;}
+    @each $key, $val in $key_arg {
+        &--#{$key}{font-size: $val}
+    }
 }
 
-.note_bottom{
-    align-content: center;
-    font-size: 5vw;    
-    background: -webkit-linear-gradient(0.40turn, rgb(255, 187, 0), rgb(248, 0, 0));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.note {
+    @include note-size($note-sizes);
 }
 
-.padding_right{
-    display: inline-block;
-}
 
-.padding_left{
-    display: inline-block;
+///////////////////TEST///////////////
+
+.rectangle-menu{
+    margin-top: 50px;
+    height: 220px;
+    width: 45%;
+    line-height:20px; /* centrage vertical */
+    text-align:center; /* centrage horizontal */
 }
 
 /*Underline From Left */
@@ -81,29 +125,73 @@ section{
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
-  }
-  .hvr-underline-from-left:before {
+}
+.hvr-underline-from-left:before {
     content: "";
     position: absolute;
     z-index: -1;
     left: 0;
     right: 100%;
     bottom: 0;
-    background: $cd-menu1-secondary;
     height: 4px;
     transition-property: right;
     transition-duration: 0.3s;
+    background: $cd-menu1-txt;
     transition-timing-function: ease-out;
-  }
-  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
-    right: 0;
-  }
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;   
+}
+
 
   ////////Menu1///////
   .style_menu1{
     font-size: 2rem;
     font-family: "Devonshire-Regular";
-    color: $cd-menu1-secondary;    
+    color: $cd-menu1-txt;    
+}
+  ////////Menu2///////
+  .style_menu2{
+    font-size: 1.3rem;
+
+    font-family: "Croissantone-regular";
+    &--a{
+        color: $cd-menu2-a-txt;
+    }
+    &--b{
+        color: $cd-menu2-b-txt;
+    }
+    &--c{
+        color: $cd-menu2-c-txt;
+    }
+}
+
+ ////////Menu3///////
+ .style_menu3{
+    font-size: 2rem;
+    font-family: "Soozle";
+    color: $cd-menu3-txt;    
+}
+
+ ////////Menu4///////
+.style_menu4{
+    font-size: 2rem;
+    font-family: "Soozle";
+    color: $cd-menu4-txt;
+}
+
+
+/////////FLEX///////////
+.flexbox{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.flex_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flex_column{
@@ -114,22 +202,61 @@ section{
 .flex_space-between{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+.flex_space-between p{
+    &:first-child{
+        width: 80%;
+    }
+    &:last-child{
+        width: 10%;
+    }
 }
 
 .flex_nowrap{
     flex-shrink: 0;
 }
 
+.in-work {
+    text-align: center;
+    font-size: 12rem;
+}
 
+.in-work span {
+    font-size: 15rem;
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+  
+  .in-work span:nth-child(2) {
+    animation-delay: .2s;
+  }
+  
+  .in-work span:nth-child(3) {
+    animation-delay: .4s;
+  }
+  
+@keyframes blink {
+    0% {
+        opacity: .2;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .2;
+    }
+}
 
+///******************TABLETTE******************///
 
 @media (min-width: 768px) {
-    main{
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-    }
+    
 
     .bar_menu{
         max-width: 100%;
@@ -153,23 +280,41 @@ section{
     }
 
 
+
       ////////Menu1///////
     .style_menu1{
         font-size: 5rem;
     }
+
+     ////////Menu2///////
+     .style_menu2{
+        font-size: 3rem;
+    }
+
+    .rectangle-menu{
+        height: 600px;
+        width: 40%;
+    }
+
 }    
 
 
+///******************PC******************///
 @media ( min-width : 1200px ) {
 
-    .padding_right{
-        padding-right: 20px;
+    section{
+        width: 60vw;    
+    }    
+
+    .padding{
+        &_righ{
+            padding-right: 20px;
+        }
+        &_left{
+            padding-left: 20px;
+        } 
     }
     
-    .padding_left{
-        padding-left: 20px;
-    } 
-
     .scale_img{
         width: 20vw;
         box-shadow: 0px 0px 10px 6px rgb(218, 218, 218);
@@ -180,13 +325,28 @@ section{
         }
     }
 
+    .width_menu{
+        width: 60vw;
+    }
+
+    .flex_space-between{
+        display: flex;
+        justify-content: space-between;
+        padding: -200px;
+    }
+
     .btn {
         width: 20vw;
     }
 
       ////////Menu1///////
     .style_menu1{
-        font-size: 5rem;
+        font-size: 3rem;
+    }
+
+     ////////Menu2///////
+     .style_menu2{
+        font-size: 2rem;
     }
 
     .bar_menu{
@@ -194,4 +354,10 @@ section{
         height: auto;
         width: 30% 
     }
+
+    .rectangle-menu{
+        height: 550px;
+        width: 20%;
+    }
+
 }
