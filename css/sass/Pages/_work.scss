@@ -83,6 +83,7 @@ $bg-menus: (
 $note-sizes:(
     top : 10vw, 
     bottom : 5vw,
+    index : 5vw,
 );
 
 
@@ -361,6 +362,10 @@ $note-sizes:(
     .rectangle-menu{
         height: 550px;
         width: 20%;
+    }
+
+    .note--index{
+        font-size: 2vw;
     }
 
 }
