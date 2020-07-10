@@ -58,12 +58,14 @@ section{
     margin: 15px auto;
     text-align: center;
     cursor: pointer;
+    background-color: $cd-primary;
+    opacity: 0.8;
     color: $cd-secondary;
-    background-color: $cd-primary;    
     transition: transform 450ms, background-color 300ms 150ms;
         &:hover {
-        transform: scale(1.13);
-        background-color: $cd-btn-end;
+            opacity: 1;
+            background: radial-gradient(circle, lighten($cd-primary, 5) 0%, darken($cd-primary, 10) 100%);
+
     }
 }
 
