@@ -36,10 +36,6 @@ section{
     height: auto;
 }
 
-.rotate-bar_menu{
-    transform: rotate(180deg);
-}
-
 .scale_img{
     width: 45vw;
 }
@@ -72,6 +68,10 @@ section{
 .width_menu{
     width: 90vw;
 }
+
+.width_menu_100{
+    width: 100%;
+ }
 
 $bg-menus: (
     bg1  : $cd-menu1-bg,
@@ -236,6 +236,7 @@ $note-sizes:(
 
 
 
+
 ///******************TABLETTE******************///
 
 @media (min-width: 768px) {
@@ -322,6 +323,11 @@ $note-sizes:(
     .width_menu{
         width: 60vw;
     }
+
+    .width_menu_100{
+        width: initial;
+     }
+     
 
     .flex_space-between{
         display: flex;

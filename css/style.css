@@ -74,6 +74,10 @@ ul {
   margin-top: 0.5vw;
 }
 
+.rotate-bar_menu {
+  transform: rotate(180deg);
+}
+
 .img-orientation {
   transform: scaleX(-1);
 }
@@ -102,10 +106,6 @@ ul {
   }
   .size_title_menu2 {
     font-size: 2.3rem;
-  }
-
-  .padding_bottom_20px {
-    padding-left: 170px;
   }
 
   .margin_top {
@@ -263,10 +263,6 @@ section {
   height: auto;
 }
 
-.rotate-bar_menu {
-  transform: rotate(180deg);
-}
-
 .scale_img {
   width: 45vw;
 }
@@ -297,6 +293,10 @@ section {
 
 .width_menu {
   width: 90vw;
+}
+
+.width_menu_100 {
+  width: 100%;
 }
 
 .color_menu--bg1 {
@@ -523,6 +523,10 @@ section {
 
   .width_menu {
     width: 60vw;
+  }
+
+  .width_menu_100 {
+    width: initial;
   }
 
   .flex_space-between {

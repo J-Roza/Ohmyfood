@@ -76,7 +76,9 @@ ul{
     margin-top: 0.5vw;
 }
 
-
+.rotate-bar_menu{
+    transform: rotate(180deg);
+}
 
 .img-orientation{
     transform: scaleX(-1);
@@ -113,9 +115,7 @@ ul{
         }
     }  
 
-    .padding_bottom_20px{   
-        padding-left: 170px;
-    }
+    
 
     .margin_top{
         margin-top: 5vw;
