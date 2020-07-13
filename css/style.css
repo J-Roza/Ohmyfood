@@ -1,3 +1,40 @@
+@font-face {
+  font-family: "Grotesk-Light";
+  src: url("./fonts/Grotesk-Light.ttf");
+}
+@font-face {
+  font-family: "Devonshire-Regular";
+  src: url("./fonts/Devonshire-Regular.ttf");
+}
+@font-face {
+  font-family: "Croissantone-regular";
+  src: url("./fonts/Croissantone-regular.ttf");
+}
+@font-face {
+  font-family: "Dancing-script";
+  src: url("./fonts/Dancing-script.ttf");
+}
+@font-face {
+  font-family: "Soozle";
+  src: url("./fonts/Soozle.ttf");
+}
+@font-face {
+  font-family: "Kaushanscript";
+  src: url("./fonts/Kaushanscript-regular.ttf");
+}
+html {
+  font-size: 0.625em;
+  /* fallback IE8+ */
+  font-size: calc(1em * .625);
+  /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+
+body {
+  font-size: 1.8em;
+  /* base font-size is equivalent "14px" */
+  font-family: "Grotesk-Light";
+}
+
 h1 {
   margin: 0;
 }
@@ -104,43 +141,6 @@ ul {
     padding-left: 0;
   }
 }
-@font-face {
-  font-family: "Grotesk-Light";
-  src: url("./fonts/Grotesk-Light.ttf");
-}
-@font-face {
-  font-family: "Devonshire-Regular";
-  src: url("./fonts/Devonshire-Regular.ttf");
-}
-@font-face {
-  font-family: "Croissantone-regular";
-  src: url("./fonts/Croissantone-regular.ttf");
-}
-@font-face {
-  font-family: "Dancing-script";
-  src: url("./fonts/Dancing-script.ttf");
-}
-@font-face {
-  font-family: "Soozle";
-  src: url("./fonts/Soozle.ttf");
-}
-@font-face {
-  font-family: "Kaushanscript";
-  src: url("./fonts/Kaushanscript-regular.ttf");
-}
-html {
-  font-size: 0.625em;
-  /* fallback IE8+ */
-  font-size: calc(1em * .625);
-  /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
-}
-
-body {
-  font-size: 1.8em;
-  /* base font-size is equivalent "14px" */
-  font-family: "Grotesk-Light";
-}
-
 .header_top {
   font-size: 2rem;
   padding: 25px;
