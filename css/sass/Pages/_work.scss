@@ -168,13 +168,13 @@ $note-sizes:(
 
   ////////Menu1///////
 .style_menu1{
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: "Devonshire-Regular";
     color: $cd-menu1-txt;    
 }
   ////////Menu2///////
  .style_menu2{
-    font-size: 0.8rem;
+    font-size: 2rem;
     font-family: "Croissantone-regular";
     &--a{
         color: $cd-menu2-a-txt;
@@ -189,14 +189,14 @@ $note-sizes:(
 
  ////////Menu3///////
  .style_menu3{
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-family: "Soozle";
     color: $cd-menu3-txt;    
 }
 
  ////////Menu4///////
 .style_menu4{
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-family: "Soozle";
     color: $cd-menu4-txt;
 }
@@ -275,7 +275,7 @@ $note-sizes:(
 
       ////////Menu1///////
     .style_menu1{
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
      ////////Menu2///////
@@ -344,22 +344,22 @@ $note-sizes:(
 
       ////////Menu1///////
     .style_menu1{
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
      ////////Menu2///////
      .style_menu2{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
        ////////Menu3///////
        .style_menu3{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
        ////////Menu4///////
        .style_menu4{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .bar_menu{

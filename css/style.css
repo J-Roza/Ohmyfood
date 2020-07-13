@@ -398,13 +398,13 @@ section:focus a {
   }
 }
 .style_menu1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Devonshire-Regular";
   color: #6b4649;
 }
 
 .style_menu2 {
-  font-size: 0.8rem;
+  font-size: 2rem;
   font-family: "Croissantone-regular";
 }
 .style_menu2--a {
@@ -418,13 +418,13 @@ section:focus a {
 }
 
 .style_menu3 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: "Soozle";
   color: #181919;
 }
 
 .style_menu4 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: "Soozle";
   color: #4a4a4a;
 }
@@ -487,7 +487,7 @@ section:focus a {
   }
 
   .style_menu1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .style_menu2 {
@@ -543,19 +543,19 @@ section:focus a {
   }
 
   .style_menu1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .style_menu2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .style_menu3 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .style_menu4 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .bar_menu {
