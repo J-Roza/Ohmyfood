@@ -10,7 +10,7 @@
         <title>ohmyfood</title>
 
         <!-- Secondary Meta -->
-        <meta name="description" content="Menu ohmyfood">
+        <meta name="description" content="ohmyfood- Les menus des plus grands restaurants new-yorkais">
         <meta name="author" content="Jonathan Roza" />
         <meta name="copyright"   content="MIT">
 
@@ -19,37 +19,41 @@
     </head>
 
     <body>        
-        <header>
-            <a href="index.html"><h1>ohmyfood</h1></a>        
+        <header class="header_top">
+            <a href="index.html">
+                <h1>ohmyfood</h1>
+            </a>        
         </header> 
 
-        <main class="main_index">                       
-           
-            <figure>              
-                <a href="view\menu_1b.html">
-                    <img class="scale_img" src="img/menus/menu-1a.png" alt="Menu 1" title="La note enchantée">
+        <main class="flexbox">                       
+            <section class="scale_img shadow-box flex_center rectangle-menu color_menu--bg1">
+                <a class="style_menu1" href="view/menu_1b.html">
+                    <h2>La note enchantée</h2>
+                    <h3>Menu</h3>
                 </a>
-            </figure>        
-            <figure>         
-                <a href="menu_2.html">
-                    <img class="scale_img" src="img/Menus/menu-2a.png" alt="Menu 2" title="Le chic a la francaise">
+            </section>        
+            <section class="scale_img shadow-box flex_center rectangle-menu color_menu--bg2">              
+                <a class="style_title-two" href="view/menu_2b.html">
+                    <h2>Le chic a la francaise</h2>
+                    <h3>Menu</h3>
                 </a>
-            </figure>
-            <figure>           
-                <a href="menu_3.html">
-                    <img class="scale_img" src="img/Menus/menu-3a.png" alt="Menu 3" title="Le délice des papilles">
+            </section>
+            <section class="scale_img shadow-box flex_center rectangle-menu color_menu--bg3">              
+                <a class="style_title-three" href="view/menu_3b.html">
+                    <h2>Le délice des papilles</h2>
+                    <h3>Menu</h3>
                 </a>                
-            </figure> 
-            <figure>          
-                <a href="menu_4.html">
-                    <img class="scale_img" src="img/Menus/menu-4a.png" alt="Menu 4" title="La palette du goût">
+            </section> 
+            <section class="scale_img shadow-box flex_center rectangle-menu color_menu--bg4">              
+                <a class="style_title-four" href="view/menu_4b.html">
+                    <h2>La palette du goût</h2>
+                    <h3>Menu</h3>
                 </a>
-            </figure>
-
-            <a class="btn center">Prochainement</a>
-
+            </section>
         </main>  
 
+        <a class="btn">Prochainement<span class="dot one">.</span><span class="dot two">.</span><span class="dot three">.</span></a>
+        
         <footer>
             <a class="btn_foot" href="view/mentions_legales.html">Mentions légales</a>
             <a class="btn_foot" href="mailto:ohmyfood@hotmail.com">Contactez-nous</a>            

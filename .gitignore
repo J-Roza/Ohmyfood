@@ -1,3 +1,4 @@
 # Ignoring directories
 sample/
 img/
+node_modules/

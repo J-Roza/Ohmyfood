@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 
     <head>
@@ -19,78 +19,91 @@
         <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
             
     </head>
-
     <body>        
-        <header>
-            <a href="..\index.html"><h1>ohmyfood</h1></a>            
-        </header>  
-
+        <header class="header_top">
+            <a href="../index.html">
+                <h1>ohmyfood</h1>
+            </a>        
+        </header> 
         <h2>La note enchantée</h2> 
-
-        <article class="block_center width_menu"> 
-            <div class="txt_center padding_top"><i class="width_img fas fa-music"></i></div> 
-                <h2 class="margin_null">La note enchantée</h2>
-             
-                <ul>
-                    <li>
-                        <section class="block_center">
-                            <div class="flexbox">
-                                <div>
-                                    <img class="padding_right" src="../img/bar_menu1.png" alt="" />
-                                    <h3 class="hvr-underline-from-left">Prélude</h3>
-                                    <img class="padding_left" src="../img/bar_menu1.png" alt="" />
-                                </div>
-                            </div>                                
+        <main class="block_center width_menu color_menu--bg1 shadow-box style_menu1 padding_bottom"> 
+            <div class="txt_center padding_top">
+                <i class="note--color note--top fas fa-music"></i>
+            </div> 
+            <article class="flex_center flex_column">
+                <h3 class="margin_null">La note enchantée</h3>
+                <section class="flex_column flex_center">
+                    <header class="flex_center">
+                        <img class="bar_menu padding-l-r" src="../img/bar_menu1.png" alt="" />
+                        <h4 class="size_title_menu1 underline-menu underline-menu1">Prélude</h4>
+                        <img class="bar_menu padding-l-r" src="../img/bar_menu1.png" alt="" />
+                    </header>
+                    <ul>
+                        <li class="flex_space-between">
                             <p>Ravioles de foie gras accompagnés de leur crème</p>
-                            <p class="price">98€</p>
+                            <p>98€</p>
+                        </li>
+                        <li class="flex_space-between">
                             <p>Caviar osciètre sur blini à la farine de blé noir</p>
-                            <p class="price">115€</p>
+                            <p>115€</p>
+                        </li>
+                        <li class="flex_space-between">
                             <p>Homard et espuma de potiron mariné aux zests d'orange</p>
-                            <p class="price">89€</p>
+                            <p>105€</p>
+                        </li>
+                        <li class="flex_space-between">
                             <p>Foie gras de canard cuit entier, confiture de figue et pain toasté</p>
-                            <p class="price">105€</p>
-                        </section>
-                    </li>                
-                    <li>
-                        <section class="block_center">
-                            <div class="flexbox">
-                                <img class="padding_right" src="../img/bar_menu1.png" alt="" />
-                                <h3 class="hvr-underline-from-left">Point d'orgue</h3>
-                                <img class="padding_left" src="../img/bar_menu1.png" alt="" />
-                            </div>
+                            <p>89€</p>
+                        </li>
+                    </ul>                   
+                </section>                
+                <section class="flex_column flex_center">
+                    <header class="flexbox flex_center">
+                        <img class="bar_menu padding-l-r" src="../img/bar_menu1.png" alt="" />
+                        <h4 class="size_title_menu1 underline-menu underline-menu1">Point d'orgue</h4>
+                        <img class="bar_menu padding-l-r" src="../img/bar_menu1.png" alt="" />
+                    </header>
+                    <ul>
+                        <li class="flex_space-between">
                             <p>Noix de coquilles Saint-Jacques sur lit de purée de céléri-rave</p>
-                            <p class="price">102€</p>
+                            <p>102€</p>
+                        </li>
+                        <li class="flex_space-between">
                             <p>Langoustine poêlée, purée de patate douce</p>
-                            <p class="price">205€</p>
+                            <p>205€</p> 
+                        </li>                               
+                        <li class="flex_space-between">
                             <p>Mijoté de queue de boeuf et riz sauvage aux zests de citron</p>
-                            <p class="price">169€</p>
-                        </section>                        
-                    </li>      
-                    <li> 
-                        <section class="block_center">
-
-                            <div class="flexbox">
-                                <div>
-                                    <img class="padding_right" src="../img/bar_menu1.png" alt="" />
-                                    <h3 class="hvr-underline-from-left">Mouvement final</h3>
-                                    <img class="padding_left" src="../img/bar_menu1.png" alt="" />
-                                </div>
-                            </div>
-
+                            <p>169€</p>
+                        </li>                                
+                    </ul>     
+                </section>                        
+                <section class="flex_column flex_center">
+                    <header class="flexbox flex_center">
+                        <img class="bar_menu padding-l-r" src="../img/bar_menu1.png" alt="" />
+                        <h4 class="size_title_menu1 underline-menu underline-menu1">Mouvement final</h4>
+                        <img class="bar_menu padding-l-r" src="../img/bar_menu1.png" alt="" />
+                    </header>
+                    <ul>
+                        <li class="padding_bottom_20px">
                             <p>Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</p>
-                            <p>Baba au rhim revisité avec son coulis de citron</p>
+                        </li>
+                        <li class="padding_bottom_20px">
+                            <p>Baba au rhum revisité avec son coulis de citron</p>
+                        </li>                                
+                        <li class="padding_bottom_20px">
                             <p>Tarte au citron meringuée destructurée</p>
-
-                        </section>
-                    </li>                         
-                </ul>
-            
-            <h2>La note enchantée</h2>         
-            
-        </article>
-
-        <a class="btn block_center" href='..\index.html'">Retour</a>
-
+                        </li>                                
+                    </ul>     
+                </section>
+            </article>            
+            <div class="txt_center padding_top">
+                <h4>
+                    <i class="note--color note--bottom padding-l-r fas fa-music"></i>La note enchantée
+                </h4>
+            </div>  
+        </main>
+        <a class="btn block_center" href="../index.html">Retour</a>
         <footer>
             <a class="btn_foot" href="mentions_legales.html">Mentions légales</a>
             <a class="btn_foot" href="mailto:ohmyfood@hotmail.com">Contactez-nous</a>           
