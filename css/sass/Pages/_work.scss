@@ -44,10 +44,6 @@ section{
     height: auto;
 }
 
-.rotate-bar_menu{
-    transform: rotate(180deg);
-}
-
 .scale_img{
     width: 45vw;
 }
@@ -81,6 +77,10 @@ section{
     width: 90vw;
 }
 
+.width_menu_100{
+    width: 100%;
+ }
+
 $bg-menus: (
     bg1  : $cd-menu1-bg,
     bg2  : $cd-menu2-bg,
@@ -91,6 +91,7 @@ $bg-menus: (
 $note-sizes:(
     top : 10vw, 
     bottom : 5vw,
+    index : 5vw,
 );
 
 
@@ -243,6 +244,7 @@ $note-sizes:(
 
 
 
+
 ///******************TABLETTE******************///
 
 @media (min-width: 768px) {
@@ -325,6 +327,11 @@ $note-sizes:(
         width: 60vw;
     }
 
+    .width_menu_100{
+        width: initial;
+     }
+     
+
     .flex_space-between{
         display: flex;
         justify-content: space-between;
@@ -364,6 +371,10 @@ $note-sizes:(
     .rectangle-menu{
         height: 550px;
         width: 20%;
+    }
+
+    .note--index{
+        font-size: 2vw;
     }
 
 }
