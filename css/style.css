@@ -48,7 +48,7 @@ h2, h3, h4 {
 }
 
 h2, h3 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 body {
@@ -119,8 +119,13 @@ ul {
   transform: scaleX(-1);
 }
 
+@media (min-width: 768px) {
+  h2, h3 {
+    font-size: 5rem;
+  }
+}
 @media (min-width: 1200px) {
-  h3 {
+  h2, h3 {
     font-size: 6rem;
   }
 
@@ -339,8 +344,8 @@ section:focus a {
 
 .rectangle-menu {
   margin-top: 50px;
-  height: 220px;
-  width: 45%;
+  height: 400px;
+  width: 250px;
 }
 
 .underline-menu:after {
@@ -503,8 +508,8 @@ section:focus a {
   }
 
   .rectangle-menu {
-    height: 600px;
-    width: 40%;
+    height: 550px;
+    width: 400px;
   }
 }
 @media (min-width: 1200px) {

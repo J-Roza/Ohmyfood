@@ -12,7 +12,7 @@ h2, h3, h4{
 
 
 h2, h3{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 body{
@@ -84,9 +84,14 @@ ul{
     transform: scaleX(-1);
 }
 
+@media (min-width: 768px){
+    h2, h3{
+        font-size: 5rem;
+    }
+}
 
 @media ( min-width : 1200px ) {
-    h3{
+    h2, h3{
         font-size: 6rem;
     }
 
