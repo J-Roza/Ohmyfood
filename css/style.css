@@ -1,3 +1,40 @@
+@font-face {
+  font-family: "Grotesk-Light";
+  src: url("./fonts/Grotesk-Light.ttf");
+}
+@font-face {
+  font-family: "Devonshire-Regular";
+  src: url("./fonts/Devonshire-Regular.ttf");
+}
+@font-face {
+  font-family: "Croissantone-regular";
+  src: url("./fonts/Croissantone-regular.ttf");
+}
+@font-face {
+  font-family: "Dancing-script";
+  src: url("./fonts/Dancing-script.ttf");
+}
+@font-face {
+  font-family: "Soozle";
+  src: url("./fonts/Soozle.ttf");
+}
+@font-face {
+  font-family: "Kaushanscript";
+  src: url("./fonts/Kaushanscript-regular.ttf");
+}
+html {
+  font-size: 0.625em;
+  /* fallback IE8+ */
+  font-size: calc(1em * .625);
+  /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+
+body {
+  font-size: 1.8em;
+  /* base font-size is equivalent "14px" */
+  font-family: "Grotesk-Light";
+}
+
 h1 {
   margin: 0;
 }
@@ -11,7 +48,7 @@ h2, h3, h4 {
 }
 
 h2, h3 {
-  font-size: 3rem;
+  font-size: 4rrun em;
 }
 
 body {
@@ -82,8 +119,13 @@ ul {
   transform: scaleX(-1);
 }
 
+@media (min-width: 768px) {
+  h2, h3 {
+    font-size: 5rem;
+  }
+}
 @media (min-width: 1200px) {
-  h3 {
+  h2, h3 {
     font-size: 6rem;
   }
 
@@ -108,47 +150,10 @@ ul {
     font-size: 2.3rem;
   }
 
-  .margin_top {
-    margin-top: 5vw;
+  .padding_bottom_20px {
+    padding-left: 0;
   }
 }
-@font-face {
-  font-family: "Grotesk-Light";
-  src: url("./fonts/Grotesk-Light.ttf");
-}
-@font-face {
-  font-family: "Devonshire-Regular";
-  src: url("./fonts/Devonshire-Regular.ttf");
-}
-@font-face {
-  font-family: "Croissantone-regular";
-  src: url("./fonts/Croissantone-regular.ttf");
-}
-@font-face {
-  font-family: "Dancing-script";
-  src: url("./fonts/Dancing-script.ttf");
-}
-@font-face {
-  font-family: "Soozle";
-  src: url("./fonts/Soozle.ttf");
-}
-@font-face {
-  font-family: "Kaushanscript";
-  src: url("./fonts/Kaushanscript-regular.ttf");
-}
-html {
-  font-size: 0.625em;
-  /* fallback IE8+ */
-  font-size: calc(1em * .625);
-  /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
-}
-
-body {
-  font-size: 1.8em;
-  /* base font-size is equivalent "14px" */
-  font-family: "Grotesk-Light";
-}
-
 .header_top {
   font-size: 2rem;
   padding: 25px;
@@ -233,6 +238,14 @@ main {
 
 section {
   width: 80vw;
+  transform: scale(1);
+  transition: transform 200ms;
+}
+section:hover a {
+  transform: scale(1.1);
+}
+section:focus a {
+  transform: scale(1.1);
 }
 
 .style_title-two {
@@ -396,7 +409,7 @@ section {
 }
 
 .style_menu2 {
-  font-size: 0.8rem;
+  font-size: 2rem;
   font-family: "Croissantone-regular";
 }
 .style_menu2--a {
@@ -410,13 +423,13 @@ section {
 }
 
 .style_menu3 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: "Soozle";
   color: #181919;
 }
 
 .style_menu4 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: "Soozle";
   color: #4a4a4a;
 }
@@ -479,7 +492,7 @@ section {
   }
 
   .style_menu1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .style_menu2 {
@@ -514,11 +527,6 @@ section {
   .scale_img {
     width: 20vw;
     box-shadow: 0px 0px 10px 6px #dadada;
-    transform: scale(1);
-    transition: transform 200ms;
-  }
-  .scale_img:hover {
-    transform: scale(1.1);
   }
 
   .width_menu {
@@ -540,19 +548,19 @@ section {
   }
 
   .style_menu1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .style_menu2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .style_menu3 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .style_menu4 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .bar_menu {
