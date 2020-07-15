@@ -49,7 +49,6 @@ h2, h3, h4 {
 
 h2, h3 {
   font-size: 4rrun em;
-
 }
 
 body {
@@ -345,8 +344,8 @@ section:focus a {
 
 .rectangle-menu {
   margin-top: 50px;
-  height: 400px;
-  width: 250px;
+  height: 220px;
+  width: 45%;
 }
 
 .underline-menu:after {
@@ -404,7 +403,7 @@ section:focus a {
   }
 }
 .style_menu1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Devonshire-Regular";
   color: #6b4649;
 }
@@ -509,8 +508,8 @@ section:focus a {
   }
 
   .rectangle-menu {
-    height: 550px;
-    width: 400px;
+    height: 600px;
+    width: 40%;
   }
 }
 @media (min-width: 1200px) {

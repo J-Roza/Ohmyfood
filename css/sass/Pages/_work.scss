@@ -122,8 +122,8 @@ $note-sizes:(
 
 .rectangle-menu{
     margin-top: 50px;
-    height: 400px;
-    width: 250px;
+    height: 220px;
+    width: 45%;
 }
 
 ///////////////////TEST///////////////
@@ -168,7 +168,7 @@ $note-sizes:(
 
   ////////Menu1///////
 .style_menu1{
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "Devonshire-Regular";
     color: $cd-menu1-txt;    
 }
@@ -295,8 +295,8 @@ $note-sizes:(
 
 
     .rectangle-menu{
-        height: 550px;
-        width: 400px;
+        height: 600px;
+        width: 40%;
     }
 
 }    
