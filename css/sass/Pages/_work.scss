@@ -115,18 +115,23 @@ section{
     background: transparent;
     transition: width 0.5s ease, background-color 0.5s ease;
   }
+
   .underline-menu:hover:after {
     width: 90%;
   }
+
   .underline-menu1:hover:after {
     background: #6B4649;
   }
+
   .underline-menu2:hover:after {
     background: linear-gradient(30deg, #C67412, #A56799, #6E4CCC);
   }
+
   .underline-menu3:hover:after {
     background: linear-gradient(30deg, #0E32DE, #0B73F3, #4EAFF7);
   }
+
   .underline-menu4:hover:after {
     background: linear-gradient(0.3turn, #3D923A, #E4FECD);
   }
@@ -140,11 +145,7 @@ section{
     &.three { animation-delay: 0.6s; }
 }
 
-@keyframes blink {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
-}
+
 
   ////////Menu1///////
 .style_menu1{
@@ -152,6 +153,7 @@ section{
     font-family: "Devonshire-Regular";
     color: $cd-menu1-txt;    
 }
+
   ////////Menu2///////
  .style_menu2{
     font-size: 1.6rem;
@@ -321,7 +323,7 @@ section{
 
     .width_menu_100{
         width: initial;
-     }
+    }
      
 
     .flex_space-between{
