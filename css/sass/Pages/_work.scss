@@ -1,5 +1,4 @@
 main {       
-    min-height: calc(100vh - 70px);
     margin: 0 auto;
 }
 
@@ -36,9 +35,19 @@ section{
     font-family: "Kaushanscript";
 }
 
+.size_title{
+    &_menu1{
+        font-size: 3rem; 
+    }
+    &_menu2{
+        font-size: 2.3rem;
+    }
+}  
+
 .bar_menu{
     display: flex;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
+    flex-shrink: 3; 
     max-width: 100%;
     width: 20%;
     height: auto;
@@ -81,39 +90,9 @@ section{
     width: 100%;
  }
 
-$bg-menus: (
-    bg1  : $cd-menu1-bg,
-    bg2  : $cd-menu2-bg,
-    bg3  : $cd-menu3-bg,
-    bg4  : $cd-menu4-bg,    
-);
-
-$note-sizes:(
-    top : 10vw, 
-    bottom : 5vw,
-    index : 5vw,
-);
-
-
-@mixin color-background($key_arg) {
-    @each $key, $val in $key_arg {
-        &--#{$key}{background-color: $val}
-    }
-}
 
 .color_menu{
     @include color-background($bg-menus);
-}
-
-@mixin note-size($key_arg) {
-    &--#{color}{align-content: center;
-    background: -webkit-linear-gradient(0.40turn, rgb(255, 187, 0), rgb(248, 0, 0));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;}
-    @each $key, $val in $key_arg {
-        &--#{$key}{font-size: $val}
-    }
 }
 
 .note {
@@ -122,11 +101,11 @@ $note-sizes:(
 
 .rectangle-menu{
     margin-top: 50px;
-    height: 220px;
-    width: 45%;
+    height:     75vw;
+    width:      45vw;
 }
 
-///////////////////TEST///////////////
+///////////////////underline///////////////
 .underline-menu:after {
     content: "";
     display: block;
@@ -151,7 +130,9 @@ $note-sizes:(
   .underline-menu4:hover:after {
     background: linear-gradient(0.3turn, #3D923A, #E4FECD);
   }
-//////////////DOT/////////////
+
+
+//////////////ANIMATION POINT/////////////
 .dot {
     animation: 2s blink ease infinite;
     &.one { animation-delay: 0.2s; }
@@ -165,7 +146,6 @@ $note-sizes:(
   100% { opacity: 0; }
 }
 
-
   ////////Menu1///////
 .style_menu1{
     font-size: 2rem;
@@ -174,7 +154,7 @@ $note-sizes:(
 }
   ////////Menu2///////
  .style_menu2{
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: "Croissantone-regular";
     &--a{
         color: $cd-menu2-a-txt;
@@ -248,6 +228,11 @@ $note-sizes:(
 ///******************TABLETTE******************///
 
 @media (min-width: 768px) {
+
+    section h2{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     
 
     .bar_menu{
@@ -271,7 +256,14 @@ $note-sizes:(
         width: 80vw;
     }
 
-
+    .size_title{
+        &_menu1{
+            font-size: 4rem; 
+        }
+        &_menu2{
+            font-size: 2.3rem;
+        }
+    }  
 
       ////////Menu1///////
     .style_menu1{
@@ -295,8 +287,8 @@ $note-sizes:(
 
 
     .rectangle-menu{
-        height: 600px;
-        width: 40%;
+        height: 75vw;
+        width: 45vw;
     }
 
 }    
@@ -306,7 +298,7 @@ $note-sizes:(
 @media ( min-width : 1200px ) {
 
     section{
-        width: 60vw;    
+        width: 60vw;  
     }    
 
     .padding{
@@ -342,6 +334,15 @@ $note-sizes:(
         width: 20vw;
     }
 
+    .size_title{
+        &_menu1{
+            font-size: 5rem; 
+        }
+        &_menu2{
+            font-size: 2.3rem;
+        }
+    }
+
       ////////Menu1///////
     .style_menu1{
         font-size: 4rem;
@@ -365,16 +366,21 @@ $note-sizes:(
     .bar_menu{
         max-width: 100%;
         height: auto;
-        width: 30% 
+        width: 30%;
     }
 
     .rectangle-menu{
-        height: 550px;
-        width: 20%;
+        height: 30vw;
+        width: 20vw;
     }
 
     .note--index{
         font-size: 2vw;
     }
+
+    .justify-item {
+        display: flex;
+        justify-content: space-around;
+      }
 
 }

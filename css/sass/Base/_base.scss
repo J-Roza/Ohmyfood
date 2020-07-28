@@ -10,9 +10,16 @@ h2, h3, h4{
     font-weight: normal;
 }
 
-
 h2, h3{
-    font-size: 4rem;
+    font-size: 3rem;
+}
+
+h4{
+    flex-grow: 2;
+}  
+
+main section p h3{
+    font-size: initial;
 }
 
 body{
@@ -30,6 +37,15 @@ ul{
     margin:0;
     padding:0;
 }
+
+li{
+    width: 70vw;        
+}
+
+article section header, {
+    width: 75vw;
+}
+
 
 .txt_center{
     text-align: center;
@@ -86,19 +102,30 @@ ul{
 
 @media (min-width: 768px){
     h2, h3{
-        font-size: 5rem;
+        font-size: 4rem;
     }
+    
+    li{
+        width: 60vw;        
+    }
+    
+    article section header {
+        width: 60vw;
+    }    
 }
+
 
 @media ( min-width : 1200px ) {
     h2, h3{
-        font-size: 6rem;
+        font-size: 5rem;
     }
-
-      
 
     li{
         width: 40vw;        
+    }
+
+    article section header, {
+        width: 42vw;
     }
 
     p{
@@ -110,15 +137,6 @@ ul{
         display: flex;      
         flex-wrap: nowrap;        
     }
-
-    .size_title{
-        &_menu1{
-            font-size: 5rem; 
-        }
-        &_menu2{
-            font-size: 2.3rem;
-        }
-    }  
 
     .padding_bottom_20px{   
         padding-left: 0;

@@ -1,0 +1,38 @@
+/////MAP//////////
+
+$bg-menus: (
+    bg1  : $cd-menu1-bg,
+    bg2  : $cd-menu2-bg,
+    bg3  : $cd-menu3-bg,
+    bg4  : $cd-menu4-bg,    
+);
+
+$note-sizes:(
+    top : 10vw, 
+    bottom : 5vw,
+    index : 5vw,
+);
+
+
+////////MIXIN TAILLE NOTE MUSIQUE///////////
+@mixin note-size($key_arg) {
+    &-color {
+        align-content: center;
+        background: -webkit-linear-gradient(0.40turn, rgb(255, 187, 0), rgb(248, 0, 0));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    @each $key, $val in $key_arg {
+        &--#{$key} {
+            font-size: $val
+        }
+    }
+}
+
+////////MIXIN COLOR BACKGROUND MENU///////////
+@mixin color-background($key_arg) {
+    @each $key, $val in $key_arg {
+        &--#{$key}{background-color: $val}
+    }
+}
