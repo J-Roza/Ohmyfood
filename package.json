@@ -1,14 +1,14 @@
 {
-  "name": "projet-3",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "Site Oh My Food",
+  "version": "0.2.0",
+  "description": "Prohet n°3 de OpenClassRomm",
+  "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./css/sass/main.scss:./css/style.css",
     "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "author": "Jonathan Roza",
-  "license": "ISC",
+  "license": "MIT",
   "browserslist": "last 4 versions",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0"
