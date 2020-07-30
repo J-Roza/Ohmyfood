@@ -287,6 +287,7 @@ section:focus a {
   background: linear-gradient(30deg, #c67412, #a56799, #6e4ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Croissantone-regular";
 }
 
 .style_title-three {
