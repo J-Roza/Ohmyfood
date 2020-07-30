@@ -91,11 +91,12 @@ section{
     width: 100%;
  }
 
-
+////////MIXIN COLOR BACKGROUND MENU///////////
 .color_menu{
     @include color-background($bg-menus);
 }
 
+////////MIXIN TAILLE NOTE MUSIQUE///////////
 .note {
     @include note-size($note-sizes);
 }
@@ -103,7 +104,7 @@ section{
 .rectangle-menu{
     margin-top: 50px;
     height:     75vw;
-    width:      45vw;
+    width:      55vw;
 }
 
 ///////////////////underline///////////////
