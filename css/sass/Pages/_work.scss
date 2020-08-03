@@ -26,7 +26,6 @@ section{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Dancing-script";
-
 }
 
 .style_title-four{
@@ -304,15 +303,6 @@ section{
     section{
         width: 60vw;  
     }    
-
-    .padding{
-        &_righ{
-            padding-right: 20px;
-        }
-        &_left{
-            padding-left: 20px;
-        } 
-    }
     
     .scale_img{
         width: 20vw;
@@ -331,7 +321,6 @@ section{
     .flex_space-between{
         display: flex;
         justify-content: space-between;
-        padding: -200px;
     }
 
     .btn {

@@ -200,7 +200,7 @@ h3 {
 @media (min-width: 1200px) {
   h2,
 h3 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   li {
@@ -372,7 +372,6 @@ section:focus a {
 .note-color {
   align-content: center;
   background: -webkit-linear-gradient(0.4turn, #ffbb00, #f80000);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -562,13 +561,6 @@ section:focus a {
     width: 60vw;
   }
 
-  .padding_righ {
-    padding-right: 20px;
-  }
-  .padding_left {
-    padding-left: 20px;
-  }
-
   .scale_img {
     width: 20vw;
     box-shadow: 0px 0px 10px 6px #dadada;
@@ -585,7 +577,6 @@ section:focus a {
   .flex_space-between {
     display: flex;
     justify-content: space-between;
-    padding: -200px;
   }
 
   .btn {
