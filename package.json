@@ -1,7 +1,7 @@
 {
   "name": "site_oh_my_food",
   "version": "0.2.0",
-  "description": "Prohet nÂ°3 de OpenClassRomm",
+  "description": "Projet n°3 de OpenClassRooms",
   "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./css/sass/main.scss:./css/style.css",
