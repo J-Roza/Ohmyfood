@@ -1,7 +1,7 @@
 {
-  "name": "site_oh_my_food",
+  "name": "projet_openclassrooms_ohmyfood",
   "version": "0.2.0",
-  "description": "Projet n�3 de OpenClassRooms",
+  "description": "Projet Numéro 3 d'OpenClassRooms : PARCOURS Développeur Web",
   "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./css/sass/main.scss:./css/style.css",
