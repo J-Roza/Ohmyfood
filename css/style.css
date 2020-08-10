@@ -103,6 +103,10 @@ h3 {
   font-size: 3rem;
 }
 
+.font-size_menu2 {
+  font-size: 2rem;
+}
+
 h4 {
   flex-grow: 2;
 }
@@ -189,6 +193,10 @@ h3 {
     font-size: 4rem;
   }
 
+  .font-size_menu2 {
+    font-size: 3rem;
+  }
+
   li {
     width: 60vw;
   }
@@ -201,6 +209,10 @@ h3 {
   h2,
 h3 {
     font-size: 4rem;
+  }
+
+  .font-size_menu2 {
+    font-size: 3rem;
   }
 
   li {
@@ -227,7 +239,7 @@ h3 {
 }
 .header_top {
   font-size: 2rem;
-  padding: 25px;
+  padding: 2px;
   text-align: center;
   color: #fdcb46;
   background-color: #579c87;
@@ -235,7 +247,7 @@ h3 {
 
 @media (min-width: 768px) {
   .header_top {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 footer {
@@ -244,7 +256,7 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 10px;
+  padding: 5px;
   justify-content: space-between;
   color: #fdcb46;
   background-color: #579c87;
@@ -264,7 +276,7 @@ footer {
 
 @media (min-width: 768px) {
   .btn_foot {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 main {
@@ -515,7 +527,7 @@ section:focus a {
   }
 
   .btn {
-    font-size: 4rem;
+    font-size: 3rem;
     width: 30vw;
     margin: 35px auto;
   }
@@ -570,10 +582,6 @@ section:focus a {
     width: 60vw;
   }
 
-  .width_menu_100 {
-    width: initial;
-  }
-
   .flex_space-between {
     display: flex;
     justify-content: space-between;
@@ -624,6 +632,10 @@ section:focus a {
   .justify-item {
     display: flex;
     justify-content: space-around;
+  }
+
+  .size-main_index {
+    width: 50%;
   }
 }
 

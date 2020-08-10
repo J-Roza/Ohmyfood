@@ -245,7 +245,7 @@ section{
     }
 
     .btn{
-        font-size: 4rem;
+        font-size: 3rem;
         width: 30vw;
         margin: 35px auto;
 
@@ -369,6 +369,10 @@ section{
     .justify-item {
         display: flex;
         justify-content: space-around;
+      }
+
+      .size-main_index{
+        width: 50%;
       }
 
 }
